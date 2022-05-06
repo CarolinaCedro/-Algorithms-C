@@ -2,30 +2,32 @@
 
 
 int main(){
-	
-	
-	
+
 	struct Pessoa {
-		
+
 		char *Nome;
 		char *Profissao;
 		bool Formado;
-		int idade;
-		float peso;
-		
+		int Idade;
+		float Peso;
+
 	};
-	
-	
+
+
 	struct Pessoa carol;
-	
-	carol.idade = 27;
-	carol.Nome = " Ana Carolina";
-	
-	
-	printf("%i",carol.idade);
-	printf("%s",carol.Nome);
-	
-	
-	
+
+	carol.Nome = "Ana Carolina Cedro";
+	carol.Profissao = "Programadora";
+	carol.Idade = 27;
+	carol.Peso = 75.0;
+
+
+	printf("\nNome: %s",carol.Nome);
+	printf("\nProfissao: %s",carol.Profissao);
+	printf("\nIdade: %i",carol.Idade);
+	printf("\nPeso:%.1f",carol.Peso);
+
+
+
 	return 0;
 }
